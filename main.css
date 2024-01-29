@@ -1,0 +1,119 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+html, body {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	background:#ccc;
+	font-size:1.3rem;
+}
+h1 {
+	color:#fff;
+	text-align:center;
+	background:rgba(0,0,0,0.7);
+	margin:.5em 0;
+	padding:.5em;
+	font-size:2.2rem;
+}
+
+.inner{
+  min-height:100vh;
+	max-width:1280px;
+	margin:auto;
+	padding:20px;
+	background:rgba(255,255,255, 0.5);
+	position:relative;
+  border-bottom:1px solid #000;
+}
+.fixed1,.panel-1 {
+	background:url(https://picsum.photos/1200/800) no-repeat 50% 50%;
+}
+.fixed2,.panel-2 {
+	background:url(https://picsum.photos/1500/900) no-repeat 50% 50%;
+}
+.fixed3,.panel-3 {
+	background:url(https://picsum.photos/2000/1800) no-repeat 50% 50%;
+}
+.fixed4,.panel-4 {
+	background:url(https://picsum.photos/1500/800) no-repeat 50% 50%;
+}
+.fixed5,.panel-5 {
+	background:url(https://picsum.photos/1300/800) no-repeat 50% 50%;
+}
+.fixed6,.panel-6 {
+	background:url(https://picsum.photos/1800/1100) no-repeat 50% 50%;
+}
+.fixed7,.panel-7 {
+	background:url(https://picsum.photos/1200/1800) no-repeat 50% 50%;
+}
+.fixed8,.panel-8 {
+	background:url(https://picsum.photos/1200/1500) no-repeat 50% 50%;
+}
+.fixed9,.panel-9 {
+	background:url(https://picsum.photos/1200/800) no-repeat 50% 50%;
+}
+.fixed10,.panel-10 {
+	background:url(https://picsum.photos/1200/1200) no-repeat 50% 50%;
+}
+.fixed11,.panel-11 {
+	background:url(https://picsum.photos/800/800) no-repeat 50% 50%;
+}
+.fixed12,.panel-12 {
+	background:url(https://picsum.photos/1000/900) no-repeat 50% 50%;
+}
+.fixed13,.panel-13 {
+	background:url(https://picsum.photos/2000/1000) no-repeat 50% 50%;
+}
+.fixed14,.panel-14 {
+	background:url(https://picsum.photos/2000/2000) no-repeat 50% 50%;
+}
+.panel{background-attachment:fixed;	background-size:cover;}
+.touch .panel{background:none;}
+/*
+.fixedBG {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	background-size:cover;
+	z-index:-1;
+	opacity:0;
+  display:none;
+	transition:opacity .5s ease;
+}
+*/
+/* IOS  bounce - on first scroll ios slides element a little and leaves a gap so I've oversized it a little to make it smoother*/
+.fixedBG {
+	position:fixed;
+	top:auto;
+	left:0;
+	right:0;
+	bottom:-10vh;
+	width:100%;
+	height:110vh;
+	background-size:cover;
+	z-index:-1;
+	opacity:0;
+	transition:opacity 1.5s ease;
+	transform:translateY(-10vh);
+}
+
+.touch .fixedBG{display:block;}
+.fixedON {
+	opacity:1;
+}
+@media screen and (max-width:1320px){
+	.panel{margin:0 20px;}		
+}
+
+@media screen and (max-width:680px){
+	h1{font-size:1.8rem;padding:.3em}	
+}
